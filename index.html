@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>weather batane wala app</title>
+    <script src="data.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body id="body">
+    <div  id="form">
+        <input type="text" placeholder="enter city name" id="city">
+        <button type="submit" onclick="getWeather()">search</button>
+    </div>
+
+    <div id="location">
+            Showing results for <f id="cityname"></f>
+    </div>
+    <div id="box">
+        <div id="weather"><i class="fa-solid fa-sun"></i></div>
+        <div id="content">
+            <b>
+                <div id="date" >34|Mon|Sept</div>
+            </b>
+            <h1>
+                <div id="temp">
+                    14° C
+                </div>
+            </h1>
+            <b><div id="min_max"> 11 | 25</div></b>
+        </div>
+
+    </div>
+    <div id="reload"></div>
+</body>
+</html>
