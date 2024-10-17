@@ -46,9 +46,10 @@ async function getWeather()
     location=document.getElementById("city").value || "kanpur";
     document.getElementById("cityname").textContent=location;
     document.getElementById("location").style.display=`block`;
+    var API_key="write your API key here";
 
     //console.log(location)
-    let url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?unitGroup=metric&key=KC95BR4H27ELGV3WE7AFX2N87&contentType=json`;
+    let url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?unitGroup=metric&key={API_key}&contentType=json`;
 
         // Fetch weather data
         let response = await fetch(url);
