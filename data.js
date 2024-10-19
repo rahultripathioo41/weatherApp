@@ -15,7 +15,7 @@
     let hours = now.getHours();
     let min = now.getMinutes();
       //setting logo according to time
-    if(hours<4 || hours>9)
+    if(hours<4 || hours>21)
     {
         document.getElementById("weather").innerHTML=`<i class="fa-solid fa-moon"></i>`;
         document.getElementById("box").style.backgroundImage=`url(night.jpg)`;
